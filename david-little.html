@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>David Richardson Little / Jireh Corp GA — Pedison USA Engagement Overview</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+  :root {
+    --navy: #1F4E79;
+    --navy-light: #D6E4F0;
+    --navy-mid: #2E6DA4;
+    --red: #C0392B;
+    --red-light: #FADBD8;
+    --gold: #D4AC0D;
+    --gold-light: #FEF9E7;
+    --green: #1E8449;
+    --green-light: #D5F5E3;
+    --amber: #E67E22;
+    --amber-light: #FDEBD0;
+    --grey: #555555;
+    --off: #F8F9FA;
+    --rule: #DEE2E6;
+    --text: #212529;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; background: #F0F4F8; color: var(--text); font-size: 14px; line-height: 1.6; }
+  .wrapper { max-width: 1060px; margin: 0 auto; padding: 40px 24px; }
+
+  /* HEADER */
+  .doc-header { background: var(--navy); padding: 44px 40px; border-radius: 8px 8px 0 0; text-align: center; }
+  .doc-header .firm { font-size: 10px; letter-spacing: 3px; color: rgba(255,255,255,0.5); font-weight: 600; margin-bottom: 14px; }
+  .doc-header .csa { font-size: 11px; letter-spacing: 2px; color: var(--gold); font-weight: 600; margin-bottom: 10px; }
+  .doc-header .title { font-size: 26px; font-weight: 700; color: #FFFFFF; letter-spacing: 1px; margin-bottom: 6px; }
+  .doc-header .subtitle { font-size: 12px; color: rgba(255,255,255,0.65); letter-spacing: 1px; }
+
+  /* PRIORITY BANNER */
+  .priority-banner { background: var(--amber); color: #FFFFFF; text-align: center; padding: 13px 24px; font-size: 11px; font-weight: 700; letter-spacing: 2px; }
+
+  /* BODY */
+  .doc-body { background: #FFFFFF; padding: 44px 40px; }
+
+  /* SECTION */
+  .section-block { margin-bottom: 44px; }
+  .section-label { font-size: 9px; letter-spacing: 3px; font-weight: 700; color: var(--navy); margin-bottom: 5px; text-transform: uppercase; }
+  .section-title { font-size: 18px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+  .section-rule { width: 40px; height: 3px; background: var(--gold); margin-bottom: 22px; }
+
+  /* INFO TABLE */
+  .info-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+  .info-table td { padding: 11px 14px; vertical-align: top; border-bottom: 1px solid var(--rule); font-size: 13px; }
+  .info-table td:first-child { width: 210px; font-weight: 600; color: var(--navy); background: #F8FAFC; font-size: 11px; letter-spacing: 0.5px; text-transform: uppercase; }
+  .info-table tr:last-child td { border-bottom: none; }
+
+  /* PHASE CARDS */
+  .phase-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 20px; }
+  .phase-card { border: 1px solid var(--rule); border-top: 4px solid var(--navy); border-radius: 4px; padding: 20px; background: var(--off); }
+  .phase-card.phase-1 { border-top-color: var(--navy); }
+  .phase-card.phase-2 { border-top-color: var(--navy-mid); }
+  .phase-card.phase-3 { border-top-color: var(--green); }
+  .phase-card.phase-ft { border-top-color: var(--gold); }
+  .phase-tag { font-size: 9px; letter-spacing: 2px; font-weight: 700; color: var(--gold); margin-bottom: 6px; text-transform: uppercase; }
+  .phase-name { font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+  .phase-amount { font-size: 20px; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+  .phase-detail { font-size: 12px; color: var(--grey); line-height: 1.75; }
+
+  /* ALERT BOXES */
+  .alert { padding: 16px 20px; border-radius: 4px; margin-bottom: 18px; font-size: 13px; line-height: 1.65; }
+  .alert-red { background: var(--red-light); border-left: 4px solid var(--red); }
+  .alert-amber { background: var(--amber-light); border-left: 4px solid var(--amber); }
+  .alert-gold { background: var(--gold-light); border-left: 4px solid var(--gold); }
+  .alert-green { background: var(--green-light); border-left: 4px solid var(--green); }
+  .alert-navy { background: var(--navy-light); border-left: 4px solid var(--navy); }
+  .alert strong { display: block; margin-bottom: 5px; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; }
+
+  /* REVENUE BOX */
+  .revenue-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+  .rev-card { padding: 20px; border-radius: 4px; text-align: center; }
+  .rev-card.broker { background: var(--red-light); border: 1px solid #F1948A; }
+  .rev-card.lendingwise { background: var(--amber-light); border: 1px solid #F0A500; }
+  .rev-card.verified { background: var(--green-light); border: 1px solid #82E0AA; }
+  .rev-card .rev-label { font-size: 9px; letter-spacing: 2px; font-weight: 700; margin-bottom: 8px; text-transform: uppercase; }
+  .rev-card.broker .rev-label { color: var(--red); }
+  .rev-card.lendingwise .rev-label { color: var(--amber); }
+  .rev-card.verified .rev-label { color: var(--green); }
+  .rev-card .rev-amount { font-size: 22px; font-weight: 700; }
+  .rev-card.broker .rev-amount { color: var(--red); }
+  .rev-card.lendingwise .rev-amount { color: var(--amber); }
+  .rev-card.verified .rev-amount { color: var(--green); }
+  .rev-card .rev-source { font-size: 11px; color: var(--grey); margin-top: 5px; }
+
+  /* STACK TABLE */
+  .stack-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+  .stack-table th { background: var(--navy); color: var(--gold); font-size: 10px; letter-spacing: 1.5px; padding: 11px 14px; text-align: left; font-weight: 600; }
+  .stack-table td { padding: 11px 14px; font-size: 13px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  .stack-table tr:nth-child(even) td { background: var(--off); }
+  .stack-table tr:last-child td { border-bottom: none; font-weight: 700; background: var(--navy-light); }
+  .stack-table tr.total-row td { font-weight: 700; background: var(--navy-light); color: var(--navy); }
+
+  /* RISK TABLE */
+  .risk-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+  .risk-table th { background: var(--navy); color: var(--gold); font-size: 10px; letter-spacing: 1.5px; padding: 10px 14px; text-align: left; font-weight: 600; }
+  .risk-table td { padding: 10px 14px; font-size: 12px; border-bottom: 1px solid var(--rule); vertical-align: top; line-height: 1.6; }
+  .risk-table tr:nth-child(even) td { background: var(--off); }
+  .badge { display: inline-block; font-size: 9px; letter-spacing: 1px; font-weight: 700; padding: 3px 8px; border-radius: 2px; }
+  .badge-open { background: var(--red-light); color: var(--red); }
+  .badge-pend { background: var(--amber-light); color: var(--amber); }
+  .badge-ok { background: var(--green-light); color: var(--green); }
+  .badge-hold { background: var(--navy-light); color: var(--navy); }
+
+  /* ENTITY TABLE */
+  .entity-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+  .entity-table td { padding: 10px 14px; font-size: 13px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  .entity-table td:first-child { width: 200px; font-weight: 600; background: #F8FAFC; font-size: 11px; color: var(--navy); text-transform: uppercase; letter-spacing: 0.5px; }
+
+  /* NEXT STEPS */
+  .steps-list { list-style: none; }
+  .steps-list li { display: flex; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--rule); align-items: flex-start; font-size: 13px; }
+  .steps-list li:last-child { border-bottom: none; }
+  .step-num { font-size: 16px; font-weight: 700; color: var(--navy); min-width: 28px; }
+  .step-body strong { display: block; color: var(--navy); margin-bottom: 3px; }
+
+  /* FOOTER */
+  .doc-footer { background: #111827; padding: 32px 40px; border-radius: 0 0 8px 8px; text-align: center; }
+  .doc-footer .firm-name { font-size: 14px; font-weight: 700; color: #FFFFFF; letter-spacing: 2px; margin-bottom: 6px; }
+  .doc-footer .meta { font-size: 11px; color: rgba(255,255,255,0.35); line-height: 1.9; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <div class="doc-header">
+    <div class="firm">PEDISON USA CORPORATION · CAPITAL SOLUTIONS DIVISION · CONFIDENTIAL</div>
+    <div class="csa">CSA-2026-0526-JCG · ENGAGEMENT OVERVIEW · JUNE 2026</div>
+    <div class="title">DAVID RICHARDSON LITTLE</div>
+    <div class="subtitle">JIREH CORPORATION OF GEORGIA · MULTI-PHASE INDUSTRIAL PLATFORM ACQUISITION</div>
+  </div>
+
+  <div class="priority-banner">REVENUE RECONCILIATION OUTSTANDING · CONDITIONAL HOLD · PART II MEMO DELIVERED JUNE 6, 2026</div>
+
+  <div class="doc-body">
+
+    <!-- ENGAGEMENT SNAPSHOT -->
+    <div class="section-block">
+      <div class="section-label">Section 01</div>
+      <div class="section-title">Engagement Snapshot</div>
+      <div class="section-rule"></div>
+      <table class="info-table">
+        <tr><td>CSA Reference</td><td>CSA-2026-0526-JCG</td></tr>
+        <tr><td>Buyer / Client</td><td>David Richardson Little · Jireh Corporation of Georgia</td></tr>
+        <tr><td>Seller</td><td>John Darien Sapp · JDS Express LLC</td></tr>
+        <tr><td>Broker of Record</td><td>Jeff Lustbader</td></tr>
+        <tr><td>Target Acquisition</td><td>JDS Express LLC — Intermodal drayage, 43 trucks, 62 drivers, Port of Savannah, Garden City GA</td></tr>
+        <tr><td>Acquisition Price</td><td>$27.8M (full business acquisition)</td></tr>
+        <tr><td>Combined Capital Stack</td><td>$22M – $25M across three Allion Fund / SBA / ABL phases</td></tr>
+        <tr><td>Full Platform (Est.)</td><td>$35M+ including truck yard improvements, steel, data center, Fast-Tek advisory</td></tr>
+        <tr><td>Advisory Fees</td><td>$300,000 branding · $300,000 capital formation = $600,000 total</td></tr>
+        <tr><td>Fast-Tek Advisory Fee</td><td>50% of raise on a minimum $5M standalone Pedison Advisory engagement</td></tr>
+        <tr><td>Pedison Rating</td><td>Conditional Hold — 14–16 open conditions · Revenue reconciliation outstanding</td></tr>
+        <tr><td>Part II Memo Delivered</td><td>June 6, 2026 — to Dickson Ewemade, Founder and CEO</td></tr>
+        <tr><td>Lender Platform</td><td>LendingWise — 117 files uploaded as of June 2026</td></tr>
+      </table>
+    </div>
+
+    <!-- CAPITAL STACK -->
+    <div class="section-block">
+      <div class="section-label">Section 02</div>
+      <div class="section-title">Three-Phase Capital Stack</div>
+      <div class="section-rule"></div>
+      <div class="phase-grid">
+        <div class="phase-card phase-1">
+          <div class="phase-tag">Phase 1 · Allion Fund 1 LP</div>
+          <div class="phase-name">Truck Yard — Operational CRE Bridge</div>
+          <div class="phase-amount">$4.7M – $5.1M</div>
+          <div class="phase-detail">
+            JDS truck yard appraised at $7.225M · Active operational CRE housing 43-truck fleet and maintenance building · Allion Fund 1 bridge at 65–70% LTV · Planned improvements: industrial concrete resurfacing + permanent office/maintenance building replacing existing trailer office · Post-improvement appraisal expected to exceed $7.225M
+          </div>
+        </div>
+        <div class="phase-card phase-2">
+          <div class="phase-tag">Phase 2 · SBA 7(a) + Transportation Lenders</div>
+          <div class="phase-name">JDS Express Business Acquisition</div>
+          <div class="phase-amount">$15M – $18M</div>
+          <div class="phase-detail">
+            Full $27.8M business acquisition · SBA 7(a) primary instrument · Asset-based lending (ABL) overlay for fleet · Transportation lender participation for rolling stock · 43 trucks, 62 drivers, Port of Savannah drayage contracts · Evans Delivery C ~99% revenue concentration — single-payor risk flagged
+          </div>
+        </div>
+        <div class="phase-card phase-3">
+          <div class="phase-tag">Phase 3 · Allion Fund 1 or SBA 504</div>
+          <div class="phase-name">Cold Storage Acquisition — Sylvania GA</div>
+          <div class="phase-amount">$1.82M – $1.96M</div>
+          <div class="phase-detail">
+            525 Industrial Park Road · Sylvania, GA 30467 · ±35,000 SF · ±20.08 acres · Zoned Industrial · Asking $2.8M (reduced from $3.25M) · Custom 6,600 SF hydrocooler · 3 dock doors · 58 miles Port of Savannah · Broker: Tyler Mouchet, Colliers Savannah · Allion at 65–70% LTV or SBA 504 if owner-occupied confirmed · Steel plant and data center co-location planned
+          </div>
+        </div>
+        <div class="phase-card phase-ft">
+          <div class="phase-tag">Standalone · Pedison Advisory</div>
+          <div class="phase-name">Fast-Tek Express Capital Raise</div>
+          <div class="phase-amount">$5M+ Target</div>
+          <div class="phase-detail">
+            Decoupled from JDS underwriting — repositioned as standalone Pedison Advisory capital raise · Fast-Tek Express LLC is a separate legal entity · Pedison Advisory fee: 50% of raise on minimum $5M · Raise structure and investor outreach to be scoped separately from JDS Express credit file · No cross-collateralization with JDS position
+          </div>
+        </div>
+      </div>
+      <table class="stack-table">
+        <thead>
+          <tr><th>PHASE</th><th>INSTRUMENT</th><th>USE</th><th>AMOUNT</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Phase 1</td><td>Allion Fund 1 LP Bridge</td><td>Truck yard CRE position</td><td>$4.7M – $5.1M</td></tr>
+          <tr><td>Phase 2</td><td>SBA 7(a) + ABL + Transportation Lenders</td><td>JDS Express business acquisition</td><td>$15M – $18M</td></tr>
+          <tr><td>Phase 3</td><td>Allion Fund 1 Bridge or SBA 504</td><td>Cold storage warehouse, Sylvania GA</td><td>$1.82M – $1.96M</td></tr>
+          <tr><td>Advisory</td><td>Pedison Advisory Raise</td><td>Fast-Tek Express standalone raise</td><td>$5M+ (min.)</td></tr>
+          <tr class="total-row"><td colspan="3">COMBINED PLATFORM TOTAL (ESTIMATED)</td><td>$22M – $25M core · $35M+ full platform</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- REVENUE RECONCILIATION -->
+    <div class="section-block">
+      <div class="section-label">Section 03</div>
+      <div class="section-title">Revenue Reconciliation — Critical Outstanding Issue</div>
+      <div class="section-rule"></div>
+      <div class="revenue-grid">
+        <div class="rev-card broker">
+          <div class="rev-label">Broker Claim</div>
+          <div class="rev-amount">$6.28M</div>
+          <div class="rev-source">Jeff Lustbader submission · Tax return basis claimed · Not independently verified</div>
+        </div>
+        <div class="rev-card lendingwise">
+          <div class="rev-label">LendingWise Platform</div>
+          <div class="rev-amount">$14.1M</div>
+          <div class="rev-source">2025 revenue summary on platform · Source format uncertain · Third conflicting figure</div>
+        </div>
+        <div class="rev-card verified">
+          <div class="rev-label">Pedison Verified</div>
+          <div class="rev-amount">$3.688M</div>
+          <div class="rev-source">13-month Ameris Bank analysis · Evans Delivery C ACH deposits · Direct bank statement verification</div>
+        </div>
+      </div>
+      <div class="alert alert-red">
+        <strong>Revenue Reconciliation Required Before Any Commitment</strong>
+        Three conflicting revenue figures exist across the broker submission, the LendingWise platform, and Pedison's independent bank statement analysis. The gap between the broker figure ($6.28M) and Pedison's verified figure ($3.688M) represents a 37–41% inflation. The LendingWise figure of $14.1M is unexplained and conflicts with both. CPA Jerry McNair (Reference J2663 OOFF) is the required source for tax return verification. No commitment, no term sheet, and no committee submission will be made until all three figures are reconciled against the actual tax returns.
+      </div>
+      <div class="alert alert-amber">
+        <strong>Single-Payor Concentration Risk</strong>
+        Evans Delivery C accounts for approximately 99% of JDS Express revenue as verified through the 13-month Ameris Bank analysis. This represents extreme customer concentration and is a standalone disqualifying condition under standard SBA 7(a) underwriting unless mitigated. Loss of the Evans Delivery contract would effectively eliminate the business's revenue base.
+      </div>
+    </div>
+
+    <!-- ENTITY DUE DILIGENCE -->
+    <div class="section-block">
+      <div class="section-label">Section 04</div>
+      <div class="section-title">Jireh Corporation of Georgia — Entity Status</div>
+      <div class="section-rule"></div>
+      <table class="entity-table">
+        <tr><td>Entity Name</td><td>Jireh Corporation of Georgia</td></tr>
+        <tr><td>Control Number</td><td>11028286 · Georgia Secretary of State</td></tr>
+        <tr><td>Current Status</td><td>Active and current through 2026</td></tr>
+        <tr><td>2024 Dissolution</td><td>Dissolution notice issued June 14, 2024 — cured July 5, 2024 · Gap period flagged for credit file</td></tr>
+        <tr><td>2025 Registration</td><td>Filed March 31, 2025 · CFO changed to Charles Raynard Harris (Winston-Salem, NC) · Secretary changed twice</td></tr>
+        <tr><td>2026 Registration</td><td>Filed April 1, 2026 · Signed by Crystal Gayle Salter as Officer</td></tr>
+        <tr><td>Crystal Gayle Salter</td><td>Identity and officer role NOT confirmed · Signed 2026 registration in unverified capacity · Flag open in credit file</td></tr>
+        <tr><td>CFO</td><td>Charles Raynard Harris · Winston-Salem, NC · Added mid-2025</td></tr>
+        <tr><td>Pedison Position</td><td>Entity confirmed active but officer identity verification required before credit commitment</td></tr>
+      </table>
+    </div>
+
+    <!-- LENDINGWISE STATUS -->
+    <div class="section-block">
+      <div class="section-label">Section 05</div>
+      <div class="section-title">LendingWise Document Status — As of June 2026</div>
+      <div class="section-rule"></div>
+      <table class="risk-table">
+        <thead>
+          <tr><th>DOCUMENT / ITEM</th><th>STATUS</th><th>ACTION REQUIRED</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Business Bank Statements (12 months · 17 files)</td><td><span class="badge badge-ok">COMPLETE</span></td><td>Pedison independent analysis complete</td></tr>
+          <tr><td>Business Tax Returns — JDS Express</td><td><span class="badge badge-ok">COMPLETE</span></td><td>CPA verification via Jerry McNair required</td></tr>
+          <tr><td>Personal Bank Statements (8 files)</td><td><span class="badge badge-pend">PENDING REVIEW</span></td><td>Under review</td></tr>
+          <tr><td>3rd Party Authorization</td><td><span class="badge badge-open">PENDING SUBMISSION</span></td><td>Must be submitted</td></tr>
+          <tr><td>BPO (Broker Price Opinion)</td><td><span class="badge badge-open">PENDING SUBMISSION</span></td><td>Must be submitted</td></tr>
+          <tr><td>Broker Invoice</td><td><span class="badge badge-open">PENDING SUBMISSION</span></td><td>Must be submitted</td></tr>
+          <tr><td>Deed of Trust</td><td><span class="badge badge-open">PENDING SUBMISSION</span></td><td>Must be submitted</td></tr>
+          <tr><td>Flood Certification</td><td><span class="badge badge-open">PENDING SUBMISSION</span></td><td>Must be submitted</td></tr>
+          <tr><td>Business Purpose Affidavit</td><td><span class="badge badge-open">NEEDS SIGNATURE</span></td><td>Requires client signature</td></tr>
+          <tr><td>Recorded Deed</td><td><span class="badge badge-open">NEEDS SIGNATURE</span></td><td>Requires client signature</td></tr>
+          <tr><td>Safety / Compliance Records</td><td><span class="badge badge-open">WRONG DOC</span></td><td>Correct document must be resubmitted</td></tr>
+          <tr><td>80% Purchase Agreement</td><td><span class="badge badge-pend">NEEDS LEGAL REVIEW</span></td><td>Legal review required before submission</td></tr>
+          <tr><td>Business Content Package</td><td><span class="badge badge-pend">INCOMPLETE</span></td><td>Additional materials required</td></tr>
+          <tr><td>Total Files Uploaded</td><td><span class="badge badge-ok">117 FILES</span></td><td>As of June 2026</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- KEY PARTIES -->
+    <div class="section-block">
+      <div class="section-label">Section 06</div>
+      <div class="section-title">Key Parties</div>
+      <div class="section-rule"></div>
+      <table class="info-table">
+        <tr><td>Buyer / Borrower</td><td>David Richardson Little · Jireh Corporation of Georgia · Garden City / Sylvania, GA</td></tr>
+        <tr><td>Seller</td><td>John Darien Sapp · JDS Express LLC · Garden City, GA · Port of Savannah operator</td></tr>
+        <tr><td>Deal Broker</td><td>Jeff Lustbader · Submitted original $6.28M revenue figure — under reconciliation</td></tr>
+        <tr><td>Cold Storage Broker</td><td>Tyler Mouchet · Colliers International Savannah · 525 Industrial Park Rd listing</td></tr>
+        <tr><td>CPA (Required)</td><td>Jerry McNair · Reference J2663 OOFF · Tax return verification source</td></tr>
+        <tr><td>Crystal Gayle Salter</td><td>Signed 2026 Jireh Corp GA registration as Officer · Role and identity unconfirmed · Flag open</td></tr>
+        <tr><td>Charles Raynard Harris</td><td>CFO · Winston-Salem, NC · Added mid-2025 · Background check required</td></tr>
+        <tr><td>Pedison Lead</td><td>Lawrence Hill · Senior Manager, Structured Finance and Capital Solutions · (214) 710-1233 Ext. 115</td></tr>
+        <tr><td>Internal Decision Maker</td><td>Dickson Ewemade · Founder and CEO · Pedison USA Corporation</td></tr>
+      </table>
+    </div>
+
+    <!-- CONDITIONS TO ADVANCE -->
+    <div class="section-block">
+      <div class="section-label">Section 07</div>
+      <div class="section-title">Conditions Required to Advance</div>
+      <div class="section-rule"></div>
+      <ol class="steps-list">
+        <li>
+          <div class="step-num">01</div>
+          <div class="step-body">
+            <strong>Revenue Reconciliation</strong>
+            All three revenue figures ($6.28M broker, $14.1M LendingWise, $3.688M Pedison verified) must be reconciled against the actual JDS Express tax returns sourced directly from CPA Jerry McNair (Reference J2663 OOFF). No commitment proceeds until this is resolved.
+          </div>
+        </li>
+        <li>
+          <div class="step-num">02</div>
+          <div class="step-body">
+            <strong>Advisory Fees Paid</strong>
+            Pedison is not retained until the $300,000 branding fee and $300,000 capital formation fee ($600,000 total) are paid. This was communicated directly to David Little. No formal engagement exists prior to fee payment.
+          </div>
+        </li>
+        <li>
+          <div class="step-num">03</div>
+          <div class="step-body">
+            <strong>Officer Identity Verification — Crystal Gayle Salter</strong>
+            The identity and authority of Crystal Gayle Salter as the signing officer on the 2026 Jireh Corp GA registration must be confirmed and documented in the credit file before any commitment is made.
+          </div>
+        </li>
+        <li>
+          <div class="step-num">04</div>
+          <div class="step-body">
+            <strong>LendingWise Document Completion</strong>
+            All outstanding LendingWise items must be resolved: pending submissions, signature items, wrong document resubmissions, and the incomplete business content package.
+          </div>
+        </li>
+        <li>
+          <div class="step-num">05</div>
+          <div class="step-body">
+            <strong>Evans Delivery Concentration Risk Mitigation</strong>
+            David Little must demonstrate a plan to diversify the customer base beyond Evans Delivery C before Phase 2 SBA 7(a) submission. The 99% single-payor concentration must be addressed in the credit narrative.
+          </div>
+        </li>
+        <li>
+          <div class="step-num">06</div>
+          <div class="step-body">
+            <strong>CSA Amendment</strong>
+            The original CSA-2026-0526-JCG covers the JDS acquisition. The expanded scope (cold storage, steel, data center, Fast-Tek) requires a formal CSA amendment to document all additional phases and advisory engagements.
+          </div>
+        </li>
+      </ol>
+    </div>
+
+  </div><!-- end doc-body -->
+
+  <div class="doc-footer">
+    <div class="firm-name">PEDISON USA CORPORATION</div>
+    <div class="meta">
+      Capital Solutions Division · Gateway Tower, 8111 LBJ Freeway, Suite 110 · Dallas, TX 75251<br>
+      Lawrence Hill · Senior Manager, Structured Finance & Capital Solutions · (214) 710-1233 Ext. 115<br>
+      lawrencehill@pedisonusa.com · www.pedisonusa.com<br><br>
+      CSA-2026-0526-JCG · David Richardson Little / Jireh Corporation of Georgia · June 2026<br>
+      CONFIDENTIAL — FOR INTERNAL USE ONLY · Pedison USA Corporation
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
